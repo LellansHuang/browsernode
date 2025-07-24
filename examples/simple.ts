@@ -1,8 +1,5 @@
 import { Agent } from "browsernode";
 import { ChatOpenAI } from "browsernode/llm";
-import { config } from "dotenv";
-
-config();
 
 const llm = new ChatOpenAI({
 	model: "gpt-4.1-mini",
