@@ -224,3 +224,11 @@ Extensions:
 - ✅ Docker
 
 Debug launch configs included in `.vscode/`.
+
+
+## Troubleshooting
+Review the documentation and existing issues before opening a bug report.
+Include your OS, version and reproduction steps when reporting bugs.
+## License
+[![License-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+> Watch the repo to receive release notifications.
