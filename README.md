@@ -175,3 +175,26 @@ Thanks to contributors and upstream open-source communities.
 This software is for research use. Users are responsible for legal compliance.
 ## License
 [![License-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+## Build Pipeline
+
+browsernode uses GitHub Actions for CI/CD.
+
+### Pipeline Stages
+```
+commit → lint → test → build → push → deploy → smoke-test
+```
+
+| Stage | Runs On | Duration |
+|-------|---------|----------|
+| Lint | Every PR | 15s |
+| Test | Every PR | 3m |
+| Build | main + tags | 2m |
+| Deploy | main | 4m |
+| Smoke | main | 1m |
+
+### Artifacts
+- Docker image pushed to GHCR
+- Coverage report uploaded to Codecov
+- Binary attached to GitHub Release on tags
