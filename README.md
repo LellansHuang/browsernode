@@ -159,3 +159,19 @@ For more examples see the [examples](examples) folder
 ## Contributing
 
 We love contributions! Feel free to open issues for bugs or feature requests. To contribute to the docs, check out the `/docs` folder.
+
+
+## Contributing
+Read the contribution guide before submitting changes.
+Avoid duplicate issues by searching first.
+## Support
+- Bugs: https://github.com/LellansHuang/browsernode/issues
+- Ideas & general chat: https://github.com/LellansHuang/browsernode/discussions
+## Star History
+[![Star History Chart](https://api.star-history.com/svg?repos=LellansHuang/browsernode&type=Date)](https://star-history.com/#LellansHuang/browsernode&Date)
+## Acknowledgements
+Thanks to contributors and upstream open-source communities.
+## Disclaimer
+This software is for research use. Users are responsible for legal compliance.
+## License
+[![License-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
