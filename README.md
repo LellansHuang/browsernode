@@ -198,3 +198,29 @@ commit → lint → test → build → push → deploy → smoke-test
 - Docker image pushed to GHCR
 - Coverage report uploaded to Codecov
 - Binary attached to GitHub Release on tags
+
+
+## IDE Setup
+
+### IntelliJ IDEA (Recommended)
+Install these plugins:
+- ✅ **Lombok** (required)
+- ✅ **Spring Boot** (bundled in Ultimate)
+- ✅ **Database Tools & SQL**
+- ✅ **Docker**
+- ✅ **GitToolBox** (optional, but nice)
+
+Run configuration → VM options:
+```
+-Dspring.profiles.active=dev
+-Xms512m -Xmx2048m
+```
+
+### VS Code
+Extensions:
+- ✅ Language Support for Java by Red Hat
+- ✅ Spring Boot Extension Pack
+- ✅ Lombok Annotations Support
+- ✅ Docker
+
+Debug launch configs included in `.vscode/`.
