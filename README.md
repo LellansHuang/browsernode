@@ -245,3 +245,26 @@ We track performance across releases. Latest results (v1.2.0, macOS M2 Pro, 32GB
 | Bulk insert (100) | 42ms | 98ms | 165ms | Single transaction |
 
 Benchmark source: `benchmarks/` directory. Run with `./gradlew jmh`.
+
+
+## Build Pipeline
+
+browsernode uses GitHub Actions for CI/CD.
+
+### Pipeline Stages
+```
+commit → lint → test → build → push → deploy → smoke-test
+```
+
+| Stage | Runs On | Duration |
+|-------|---------|----------|
+| Lint | Every PR | 15s |
+| Test | Every PR | 3m |
+| Build | main + tags | 2m |
+| Deploy | main | 4m |
+| Smoke | main | 1m |
+
+### Artifacts
+- Docker image pushed to GHCR
+- Coverage report uploaded to Codecov
+- Binary attached to GitHub Release on tags
